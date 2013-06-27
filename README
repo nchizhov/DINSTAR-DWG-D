@@ -1,0 +1,41 @@
+* IMPORTANT NOTE *
+
+Overview
+========
+
+This Daemon for VoIP GSM Module - Dinstar DWG 2000: sending and receiveing SMS from/to gateway.
+
+How to compile
+==============
+
+- Clone the repo or download the sources.
+- Go to the source directory and run: make.
+
+How to install
+==============
+
+- Copy dwg.conf file to /etc directory.
+- Edit dwg.conf:
+  - Path to pid and log files
+  - Path for send and receive SMS directories
+  - Port for listening Dinstar DWG
+  - Path to external program, what shoud be executed when SMS received
+  
+How to use
+==========
+
+- Running daemon: /path/to/dwgd /etc/dwg.conf
+- Stopping daemon: kill `cat /path/to/pid/file.pid`
+- Sending SMS format:
+  - First line - phone number
+  - Other lines - message for send
+- Received message as eml format.
+
+Depends
+=======
+
+- Iniparser: http://ndevilla.free.fr/iniparser/
+- DWG SMS API: https://github.com/caruizdiaz/DWG2000-SMS-API
+
+If any doubts arises, please visit my blog http://blog.kgd.in or write me
+an email, I will be answering as soon as I can.
