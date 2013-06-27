@@ -1,7 +1,7 @@
 # Makefile to compile dwgclient
 #
-# Author: Carlos Ruiz Diaz
-#         caruizdiaz.com
+# Author: Chizhov Nikolay
+#         home.kgd.in
 #
 
 CC      = gcc
